@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./th-media.png" alt="Logo" width="100">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="dichvu.html">Dịch vụ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+
+                <!-- Khu vực hiển thị user -->
+                <div class="auth-actions">
+                    <!-- Khu vực hiển thị user -->
+                    <div id="user-info"></div>  <!-- Desktop -->
+                    <a href="login.html" id="login-btn" class="action_btn">Đăng nhập</a>
+                    <button id="logout-btn" style="display: none;">Đăng xuất</button>
+                </div>
+
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <!-- Menu Mobile -->
+            <div class="dropdown_menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dichvu.html">Dịch vụ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+
+                <!-- Khu vực hiển thị user trong menu mobile -->
+                <div class="auth-actions">
+                    <div id="user-info-mobile"></div>  <!-- Mobile -->
+                    <a href="login.html" id="login-btn-mobile" class="action_btn">Đăng nhập</a>
+                    <button id="logout-btn-mobile" style="display: none;">Đăng xuất</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner_img">
+            <img src="./anh_bia.png" alt="" width="100%">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./th-media.png" alt="" width="100">
+                    <h2>TH-Media</h2>
+                    <p>Cung cấp dịch vụ chụp ảnh, thiết kế đồ họa và marketing truyền thông chuyên nghiệp.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="dichvu.html">Dịch vụ</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p>📞 <a href="tel:0776910286">077 6910 286</a></p>
+                    <p>📧 <a href="mailto:th.media.78@gmail.com">th.media.78@gmail.com</a></p>
+                    <p>📍 48 Bàu trảng 5, P.Thanh Khê Tây, <br> Q.Thanh Khê, TP.Đà Nẵng</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 TH-Media. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./login_register.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

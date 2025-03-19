@@ -1,0 +1,114 @@
+/* Định dạng nền tổng thể */
+body {
+    background: url('./anh_bia.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper của form */
+#wrapper {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Tiêu đề đăng ký */
+.form-heading {
+    font-size: 26px;
+    color: #000; /* Màu chữ đen */
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Nhóm nhập liệu */
+.form-group {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+/* Khi focus vào input, viền sẽ sáng hơn */
+.form-group:focus-within {
+    box-shadow: 0 0 10px rgba(84, 160, 255, 0.8);
+}
+
+/* Icon trong input */
+.form-group i {
+    color: #000; /* Màu đen */
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Input */
+.form-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000; /* Màu đen */
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+/* Placeholder màu nhạt hơn */
+.form-input::placeholder {
+    color: #333; /* Xám đậm thay vì đen đậm */
+}
+
+/* Nút đăng ký */
+.form-submit {
+    background: linear-gradient(45deg, #4c9aff, #187bcd);
+    border: none;
+    color: #000; /* Màu chữ đen */
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hiệu ứng hover cho nút */
+.form-submit:hover {
+    background: linear-gradient(45deg, #187bcd, #4c9aff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(72, 160, 255, 0.5);
+}
+
+/* Hiệu ứng focus vào input */
+.form-input:focus {
+    color: #000;
+}
+
+/* Định dạng link đăng nhập */
+.form-text {
+    margin-top: 15px;
+    color: #000;
+    font-size: 14px;
+}
+
+.form-text a {
+    color: #006cb4; /* Nhẹ nhàng hơn thay vì xanh đậm */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tài khoản</title>
+    <link rel="stylesheet" href="./user.css">
+</head>
+<body>
+
+    <h2>Quản lý tài khoản</h2>
+    
+    <!-- 🔎 Tìm kiếm tài khoản -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Nhập tên đăng nhập">
+        <button id="search-btn">Tìm kiếm</button>
+    </div>
+
+    <!-- 📋 Danh sách tài khoản -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên đăng nhập</th>
+                <th>Email</th>
+                <th>Vai trò</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="user-list">
+            <!-- Danh sách user sẽ hiển thị ở đây -->
+        </tbody>
+    </table>
+
+        <!-- 🔹 Form thêm tài khoản -->
+        <div class="add-user-container">
+            <h3>Thêm tài khoản mới</h3>
+            <input type="text" id="new-username" placeholder="Tên đăng nhập">
+            <input type="email" id="new-email" placeholder="Email">
+            <input type="password" id="new-password" placeholder="Mật khẩu">
+            <select id="new-role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button id="add-user-btn">Thêm tài khoản</button>
+        </div>    
+
+    <!-- 🛠 Modal chỉnh sửa tài khoản -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h3>Chỉnh sửa tài khoản</h3>
+            <input type="text" id="edit-username">
+            <input type="email" id="edit-email">
+            <input type="password" id="edit-password">
+            <select id="edit-role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button id="save-changes">Lưu thay đổi</button>
+        </div>
+    </div>
+
+    <script src="./user.js"></script>
+</body>
+</html>
